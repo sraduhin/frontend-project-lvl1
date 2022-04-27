@@ -5,16 +5,17 @@ const greedingByName = () => {
   const name = readlineSync.question('May I have you name? ');
   console.log(`Hello, ${name}!`);
   return name;
-}
-
-// greedingByName();
+};
 
 const correctAnswer = (number) => {
-  return (number % 2 === 0) ? 'yes' : 'no';
-}
+  if (number % 2 === 0) {
+    return 'yes';
+  }
+  return 'no';
+};
 
-const isCorrect = (answer, number) => {
-  return (answer === correctAnswer(number)) ? true : false;
+function isCorrect(answer, number) {
+  return (answer === correctAnswer(number));
 }
 
 const startRound = () => {
@@ -25,25 +26,22 @@ const startRound = () => {
   if (isCorrect(answer, randomNumber)) {
     console.log('Correct!');
     return true;
-  } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer(randomNumber)}'`);
-    return false;
   }
-}
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer(randomNumber)}'`);
+  return false;
+};
 const evenGame = () => {
   const name = greedingByName();
   const rounds = 3;
   let i = 0;
   while (i < rounds) {
     if (startRound()) {
-      i++;
+      i += 1;
     } else {
       console.log(`Let's try again, ${name}!`);
     }
   }
   console.log(`Congratulations, ${name}`);
-  
-  return;
-}
+};
 
 evenGame();
