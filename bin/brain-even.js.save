@@ -1,0 +1,12 @@
+import greedingByName from '../src/cli.js';
+
+greedingByName();
+
+
+
+
+
+
+
+
+O
