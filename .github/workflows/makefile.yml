@@ -19,6 +19,3 @@ jobs:
       
     - name: Run lint
       run: make lint
-            
-    - name: Run distcheck
-      run: make distcheck
