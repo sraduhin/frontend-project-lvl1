@@ -3,9 +3,15 @@ import genRandomNum from '../randomNumber.js';
 
 const descPurpose = 'Answer "yes" if the number is even, otherwise answer "no".';
 const correctAnswer = (number) => {
-  if (number % 2 === 0) {
-    return 'yes';
-  } return 'no';
+  if (number < 2) {
+    return 'no'
+  }
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return 'no'
+    }
+  }
+  return 'yes'
 };
 
 const genRound = () => {

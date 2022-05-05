@@ -12,9 +12,7 @@ const mainConcept = (purpose, genRound) => {
     const [question, correctAnswer] = genRound();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');// asking for an answer
-    console.log(answer, correctAnswer); // delete
-    console.log(typeof(answer), typeof(correctAnswer)); //delete
-    if (answer === correctAnswer) {
+    if (answer === String(correctAnswer)) {
       console.log('Correct!');
       i += 1;
     } else {

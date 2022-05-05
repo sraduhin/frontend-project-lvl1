@@ -15,6 +15,15 @@ brain-even: #start game
 brain-calc: #start game
 	node bin/brain-calc.js
 
+brain-gcd: #start game
+	node bin/brain-gcd.js
+
+brain-progression: #start game
+	node bin/brain-progression
+
+brain-prime: #start game
+	node bin/brain-prime
+
 publish: #...
 	npm publish --dry-run
 
