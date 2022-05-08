@@ -1,11 +1,9 @@
-import readlineSync from 'readline-sync';
+import greeding from 'cli.js';
 
 const rounds = 3;
 
 const mainConcept = (purpose, genRound) => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have you name? ');
-  console.log(`Hello, ${name}!`);
+  userName = greeding();
   console.log(purpose);
   let i = 0;
   while (i < rounds) {
@@ -20,6 +18,6 @@ const mainConcept = (purpose, genRound) => {
       i = 0;
     }
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${userName}`);
 };
 export default mainConcept;
