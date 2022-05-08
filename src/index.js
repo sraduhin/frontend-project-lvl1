@@ -16,6 +16,7 @@ const mainConcept = (purpose, genRound) => {
       i += 1;
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
