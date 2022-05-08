@@ -1,9 +1,10 @@
-import greeding from 'cli.js';
+import readlineSync from 'readline-sync';
+import greedingByName from './cli.js';
 
 const rounds = 3;
 
 const mainConcept = (purpose, genRound) => {
-  userName = greeding();
+  const userName = greedingByName();
   console.log(purpose);
   let i = 0;
   while (i < rounds) {
