@@ -22,7 +22,7 @@ const makeRow = (start, increment, length, hidden) => {
 const genRound = () => {
   const startProgression = genRandomNum(0, 100);
   const increment = genRandomNum(1, 9);
-  const lengthProgression = genRandomNum(5, 10);
+  const lengthProgression = genRandomNum(6, 10);
   const hiddenIndex = genRandomNum(0, lengthProgression - 1);
   return makeRow(startProgression, increment, lengthProgression, hiddenIndex);
 };
