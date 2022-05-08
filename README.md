@@ -5,21 +5,21 @@
 ![frontend-project-lvl1](https://github.com/sraduhin/frontend-project-lvl1/actions/workflows/makefile.yml/badge.svg)
 <p>How to install</p>
 <p>make install</p>
-#How to play:
-#make brain-even
-#     brain-calc
-#     brain-gcd
-#     brain-progression
-#     brain-prime
-#games asciinemas
-#brain-even game
+<p>How to play</p>
+<p>make brain-even</p>
+<p>     brain-calc</p>
+<p>     brain-gcd</p>
+<p>     brain-progression</p>
+<p>     brain-prime</p>
+<p>games asciinemas</p>
+<p>brain-even game</p>
 <a href="https://asciinema.org/a/Zwr0rp4sJMC7Hh8wE3tyVvp9m"><img src="https://asciinema.org/a/Zwr0rp4sJMC7Hh8wE3tyVvp9m.png"/></a>
-#brain-calc game
+<p>brain-calc game</p>
 <a href="https://asciinema.org/a/Sf7YdsBoKH8B40EKnJ00PXes0"><img src="https://asciinema.org/a/Sf7YdsBoKH8B40EKnJ00PXes0.png"/></a>
-#brain-gcd game
+<p>brain-gcd game</p>
 <a href="https://asciinema.org/a/rL1uSC5vtdzb4J61ugX8grfcv"><img src="https://asciinema.org/a/rL1uSC5vtdzb4J61ugX8grfcv.png"/></a>
-#brain-progression game
+<p>brain-progression game</p>
 <a href="https://asciinema.org/a/q6tyhuM77x1XtIx274d5f9gpu"><img src="https://asciinema.org/a/q6tyhuM77x1XtIx274d5f9gpu.png"/></a>
-#brain-prime game
+<p>brain-prime game</p>
 <a href="https://asciinema.org/a/aFPksNrWdmJVbzmZa5XrRYEIL"><img src="https://asciinema.org/a/aFPksNrWdmJVbzmZa5XrRYEIL.png"/></a>
-#Thanks for made interest!
+<p>Thanks for made interest!</p>
