@@ -3,15 +3,13 @@
 [![Actions Status](https://github.com/sraduhin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/sraduhin/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 ![frontend-project-lvl1](https://github.com/sraduhin/frontend-project-lvl1/actions/workflows/makefile.yml/badge.svg)
-<p>How to install</p>
-<p>make install</p>
-<p>How to play</p>
-<p>make brain-even</p>
-<p>     brain-calc</p>
-<p>     brain-gcd</p>
-<p>     brain-progression</p>
-<p>     brain-prime</p>
-<p>games asciinemas</p>
+<p>How to install: make install</p>
+<p>How to play: make brain-even</p>
+<p>or brain-calc</p>
+<p>or brain-gcd</p>
+<p>or brain-progression</p>
+<p>or brain-prime</p>
+<p>games asciinemas:</p>
 <p>brain-even game</p>
 <a href="https://asciinema.org/a/Zwr0rp4sJMC7Hh8wE3tyVvp9m"><img src="https://asciinema.org/a/Zwr0rp4sJMC7Hh8wE3tyVvp9m.png"/></a>
 <p>brain-calc game</p>
