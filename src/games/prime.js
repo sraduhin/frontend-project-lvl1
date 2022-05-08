@@ -1,7 +1,7 @@
 import mainConcept from '../index.js';
 import genRandomNum from '../randomNumber.js';
 
-const descPurpose = 'Answer "yes" if the number is even, otherwise answer "no".';
+const descPurpose = 'Answer "yes" if the number is prime, otherwise answer "no".';
 const correctAnswer = (number) => {
   if (number < 2) {
     return 'no';
