@@ -5,7 +5,7 @@ import genRandomNum from '../randomNumber.js';
 const descPurpose = 'What number is missing in the progression?';
 
 const makeRow = (start, increment, length, hidden) => {
-  let row = [];
+  const row = [];
   let hiddenIndex = 0;
   for (let i = 0; i < length; i += 1) {
     if (i === hidden) {
