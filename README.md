@@ -1,7 +1,7 @@
 # Brain-games. Hexlet project.
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/sraduhin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/sraduhin/frontend-project-lvl1/actions)
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/github/sraduhin/frontend-project-lvl1"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 ![frontend-project-lvl1](https://github.com/sraduhin/frontend-project-lvl1/actions/workflows/makefile.yml/badge.svg)
 <p>How to install: make install</p>
 <p>How to play: make brain-even</p>
