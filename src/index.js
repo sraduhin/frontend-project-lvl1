@@ -1,25 +1,30 @@
 import readlineSync from 'readline-sync';
-import greedingByName from './cli.js';
+
+const greetUser = () => {
+  console.log('brain-games');
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  return userName;
+};
 
 const rounds = 3;
 
-const mainConcept = (purpose, genRound) => {
-  const userName = greedingByName();
-  console.log(purpose);
-  let i = 0;
-  while (i < rounds) {
-    const [question, correctAnswer] = genRound();
+const mainConcept = (descriptionGame, generateRound) => {
+  const userName = greetUser();
+  console.log(descriptionGame);
+  for (let i = 0; i < rounds; i += 1) {
+    const [question, correctAnswer] = generateRound();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');// asking for an answer
-    if (answer === String(correctAnswer)) {
-      console.log('Correct!');
-      i += 1;
-    } else {
+    if (answer !== correctAnswer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };
+
 export default mainConcept;

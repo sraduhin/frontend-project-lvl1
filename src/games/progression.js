@@ -1,8 +1,8 @@
 /* eslint-disable no-param-reassign */
 import mainConcept from '../index.js';
-import genRandomNum from '../randomNumber.js';
+import generateRandomNumber from '../randomNumber.js';
 
-const descPurpose = 'What number is missing in the progression?';
+const descriptionGame = 'What number is missing in the progression?';
 
 const makeRow = (start, increment, length, hidden) => {
   const row = [];
@@ -17,16 +17,16 @@ const makeRow = (start, increment, length, hidden) => {
       start += increment;
     }
   }
-  return [row.join(' '), hiddenIndex];
+  return [row.join(' '), String(hiddenIndex)];
 };
-const genRound = () => {
-  const startProgression = genRandomNum(0, 100);
-  const increment = genRandomNum(1, 9);
-  const lengthProgression = genRandomNum(6, 10);
-  const hiddenIndex = genRandomNum(0, lengthProgression - 1);
+const generateRound = () => {
+  const startProgression = generateRandomNumber(0, 100);
+  const increment = generateRandomNumber(1, 9);
+  const lengthProgression = generateRandomNumber(6, 10);
+  const hiddenIndex = generateRandomNumber(0, lengthProgression - 1);
   return makeRow(startProgression, increment, lengthProgression, hiddenIndex);
 };
 
-const gameBegin = () => mainConcept(descPurpose, genRound);
+const gameBegin = () => mainConcept(descriptionGame, generateRound);
 
 export default gameBegin;

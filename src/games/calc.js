@@ -1,9 +1,9 @@
 import mainConcept from '../index.js';
-import genRandomNum from '../randomNumber.js';
+import generateRandomNumber from '../randomNumber.js';
 
-const descPurpose = 'What is the result of the expression?';
-const genRandomOp = () => { // get random operator
-  switch (genRandomNum(0, 10) % 3) {
+const descriptionGame = 'What is the result of the expression?';
+const generateRandomOperator = () => { // get random operator
+  switch (generateRandomNumber(0, 10) % 3) {
     case 0:
       return '+';
     case 1:
@@ -30,15 +30,15 @@ const correctAnswer = (randomNumber1, randomNumber2, randomOperator) => {
   return false; // 28:Expected to return a value at the end of arrow function.eslint
 };
 
-const genRound = () => {
-  const randomNumber1 = genRandomNum(0, 50);
-  const randomNumber2 = genRandomNum(0, 11);
-  const randomOperator = genRandomOp();
+const generateRound = () => {
+  const randomNumber1 = generateRandomNumber(0, 50);
+  const randomNumber2 = generateRandomNumber(0, 11);
+  const randomOperator = generateRandomOperator();
   const question = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
-  const answer = correctAnswer(randomNumber1, randomNumber2, randomOperator);
+  const answer = String(correctAnswer(randomNumber1, randomNumber2, randomOperator));
   return [question, answer];
 };
 
-const gameBegin = () => mainConcept(descPurpose, genRound);
+const gameBegin = () => mainConcept(descriptionGame, generateRound);
 
 export default gameBegin;

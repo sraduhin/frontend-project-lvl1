@@ -1,7 +1,7 @@
 import mainConcept from '../index.js';
-import genRandomNum from '../randomNumber.js';
+import generateRandomNumber from '../randomNumber.js';
 
-const descPurpose = 'Answer "yes" if the number is prime, otherwise answer "no".';
+const descriptionGame = 'Answer "yes" if the number is prime, otherwise answer "no".';
 const correctAnswer = (number) => {
   if (number < 2) {
     return 'no';
@@ -14,12 +14,12 @@ const correctAnswer = (number) => {
   return 'yes';
 };
 
-const genRound = () => {
-  const randomNumber = genRandomNum(0, 100);
-  const answer = correctAnswer(randomNumber);
+const generateRound = () => {
+  const randomNumber = generateRandomNumber(0, 100);
+  const answer = String(correctAnswer(randomNumber));
   return [randomNumber, answer];
 };
 
-const gameBegin = () => mainConcept(descPurpose, genRound);
+const gameBegin = () => mainConcept(descriptionGame, generateRound);
 
 export default gameBegin;
