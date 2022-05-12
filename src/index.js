@@ -9,7 +9,7 @@ const greetUser = () => {
 
 const rounds = 3;
 
-const mainConcept = (descriptionGame, generateRound) => {
+const startGame = (descriptionGame, generateRound) => {
   const userName = greetUser();
   console.log(descriptionGame);
   for (let i = 0; i < rounds; i += 1) {
@@ -26,4 +26,4 @@ const mainConcept = (descriptionGame, generateRound) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default mainConcept;
+export default startGame;
